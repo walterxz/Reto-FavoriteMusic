@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  margin-bottom: 40px;
+  background-color: whitesmoke;
+  font-family: sans-serif;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,400px);
+  columns:3;
+  justify-content: center
+  gap: 20px;
+}
+
+@media (max-width: 767px) {
+  .container {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    column-count: 1;
+  }
+}
